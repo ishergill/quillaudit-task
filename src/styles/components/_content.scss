@@ -1,0 +1,116 @@
+.content {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  gap: 2rem;
+
+  &__left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    p {
+      font-size: 1.5rem;
+      font-weight: 350;
+      line-height: 2.2rem;
+      width: 85%;
+      color: #000;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+      letter-spacing: 0.05rem;
+      width: 90%;
+    }
+    img {
+      height: 100%;
+      width: auto;
+      margin-top: 1rem;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 3.2rem;
+      letter-spacing: 0.05rem;
+      color: #000;
+    }
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 3.2rem;
+      letter-spacing: 0.05rem;
+      color: #000;
+      span {
+        font-size: 1.5rem;
+        font-weight: 350;
+        line-height: 2.2rem;
+        width: 85%;
+        color: #000;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 85%;
+
+      li {
+        font-size: 1.5rem;
+        font-weight: 350;
+        line-height: 2.2rem;
+        color: #000;
+
+        span {
+          font-weight: 400;
+          font-style: italic;
+          padding-left: 0;
+        }
+      }
+    }
+    span{
+        font-size: 1.35rem;
+      font-weight: 350;
+      line-height: 2.2rem;
+      width: 85%;
+      color: #000;
+      margin-top: -1.5rem;
+      padding-left: 2.5rem;
+    }
+  }
+
+  &__right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+    &__card{
+        border: .1rem solid #6e85fc;
+        border-radius: .4rem;
+        height: fit-content;
+        padding: 1.4rem 2.4rem 2.4rem 2.4rem;
+        display: flex;
+        gap: 1.4rem;
+        flex-direction: column;
+        max-width: 70%;
+        width: 70%;
+        margin-top: 4rem;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            h4{
+                color: #808080;
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+            p{
+                color: #000;
+                font-weight: 400;
+                font-size: 1.25rem;
+            }
+        }
+        
+    }
+  }
+}
