@@ -206,8 +206,10 @@
           &__btns {
             display: flex;
             gap: 1.8rem;
-           
 
+            @include respond(phone) {
+              flex-wrap: wrap;
+            }
             button {
               background: linear-gradient(
                 267.25deg,
@@ -225,6 +227,9 @@
               opacity: 0.8;
               box-shadow: 0px 4.62px 6.93px -4.62px rgba(0, 0, 0, 0.1);
 
+              @include respond(phone) {
+                white-space: nowrap;
+              }
               &:hover {
                 opacity: 1;
               }
@@ -273,7 +278,7 @@
       border-top: 0.15rem solid #2c4882;
       margin-top: 2rem;
       padding-bottom: 3rem;
-      
+
       p {
         font-weight: 400;
         font-size: 1rem;
