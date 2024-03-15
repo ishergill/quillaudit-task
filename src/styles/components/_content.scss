@@ -3,18 +3,34 @@
   width: 65%;
   margin: 0 auto;
   gap: 2rem;
-
+  @include respond(tab-land){
+    width: 85%
+  }
+  @include respond(tab-pot){
+    width: 90%
+  }
+  @include respond(phone){
+    width: 90%;
+    flex-direction: column;
+  }
   &__left {
     width: 60%;
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+    @include respond(phone){
+      width: 100%;
+    }
     p {
       font-size: 1.5rem;
       font-weight: 350;
       line-height: 2.2rem;
       width: 85%;
       color: #000;
+      @include respond(phone){
+        width: 100%;
+
+      }
     }
     h2 {
       font-size: 2.5rem;
@@ -22,6 +38,7 @@
       line-height: 3.2rem;
       letter-spacing: 0.05rem;
       width: 90%;
+      font-family: jost;
     }
     img {
       height: 100%;
@@ -83,7 +100,9 @@
     width: 40%;
     display: flex;
     justify-content: center;
-
+    @include respond(phone){
+      width: 100%
+    }
     &__card{
         border: .1rem solid #6e85fc;
         border-radius: .4rem;
@@ -95,6 +114,11 @@
         max-width: 70%;
         width: 70%;
         margin-top: 4rem;
+        @include respond(phone){
+          width: 100%;
+        max-width: 100%;
+
+        }
         &__item{
             display: flex;
             flex-direction: column;

@@ -7,6 +7,15 @@
     width: 48%;
     display: flex;
     gap: 5rem;
+    @include respond(tab-land){
+      width: 85%
+    }
+    @include respond(tab-pot){
+      width: 90%
+    }
+    @include respond(phone){
+      width: 90%
+    }
     &__left {
       display: flex;
       flex-direction: column;
@@ -24,6 +33,9 @@
         font-size: 1.3rem;
         line-height: 2rem;
         width: 90%;
+        @include respond(phone){
+          width: 100%
+        }
       }
     }
 
@@ -60,22 +72,34 @@
     width: 36%;
     gap: 2.2rem;
     margin-top: 5rem;
+    @include respond(tab-land){
+      width: 85%
+    }
+    @include respond(tab-pot){
+      width: 90%
+    }
     h2 {
       color: #0e3088;
       font-weight: 500;
-      font-size: 2.6rem;
+      font-size: 2.8rem;
       line-height: 3rem;
       letter-spacing: 0.03rem;
       text-align: center;
+      font-family: jost;
     }
     button {
       background: linear-gradient(to right, #7184fd, #3f7af0, #4f37ee);
       border-radius: 0.4rem;
-      padding: 1.3rem 3.2rem;
+      padding: 1rem 3.2rem;
+      font-family: Jost;
+      opacity: .8;
+      &:hover{
+        opacity: 1;
+      }
       p {
         color: #fff;
         font-weight: 500;
-        font-size: 1.4rem;
+        font-size: 1.45rem;
       }
     }
   }
